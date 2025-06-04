@@ -1,0 +1,143 @@
+.risk-indicator {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .risk-meter {
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .risk-level {
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+  .risk-high { background-color: #dc3545; }
+.risk-medium { background-color: #ffc107; }
+.risk-low { background-color: #28a745; }
+
+.risk-indicator h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.risk-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.risk-label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.risk-value {
+  color: #666;
+}
+
+/* Insights Section */
+.insights-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.insights-section h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.insights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.insight-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  font-size: 0.95em;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.insight-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Voice Alert Section */
+.voice-alert-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.voice-alert-section h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.voice-alert-text {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 0 0 15px 0;
+  color: #444;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.play-alert-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.play-alert-button:hover {
+  background: #0056b3;
+}
+
+.play-alert-button:active {
+  background: #004085;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .risk-indicator {
+    padding: 15px;
+  }
+
+  .risk-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .insight-item {
+    font-size: 0.9em;
+  }
+
+  .voice-alert-text {
+    font-size: 0.9em;
+  }
+}

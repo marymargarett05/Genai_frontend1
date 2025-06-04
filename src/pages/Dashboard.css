@@ -1,0 +1,10 @@
+.dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .map-container {
+    height: 400px;
+    margin-bottom: 20px;
+  }
